@@ -1,0 +1,42 @@
+#Setup
+export HISTSIZE=5000
+export HISTFILESIZE=10000
+export PATH=$PATH:$HOME/bin
+
+#nvm config
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+nvm use stable
+
+#flair
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+txtred='\e[0;31m' # Red
+txtgrn='\e[0;32m' # Green
+bldgrn='\e[1;32m' # Bold Green
+bldpur='\e[1;35m' # Bold Purple
+txtrst='\e[0m'    # Text Reset
+
+
+#Git aliases
+alias gf='git fetch' # Git fetch
+alias gp='git pull'
+alias gpsh='git push'
+alias gc='git commit' # Git commit
+alias gcm='git commit -m'
+alias gca='git commit --amend' # Git commit amend
+alias gs='git status' # Git status
+alias gst='git stash' # Git stash
+alias gch='git checkout' # Git checkout
+alias gcb='git checkout -b' # Git checkout to new branch
+alias gbr='git branch' # Git branch
+alias gbl='git branch --all' # Git branch list (all)
+alias gl='git log --pretty="%Cblue%h %Cred%ar %Cgreen(%an) %Creset%s"' # Git log
+alias glg='gl --graph' # Git visual branch graph
+alias ga='git add' # Git add $@
+alias gaa='git add .' #Git add .
+alias gaaa='git add -A' # Git add everything (-A)
+
+
